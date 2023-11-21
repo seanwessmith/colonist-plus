@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Colonist Ext",
+  "description": "Extension for various improvements on Colonist.io",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "favicon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://colonist.io/*"
+      ]
+    }
+  ]
+}
